@@ -152,7 +152,7 @@ def test_to_list():
 #######################
 
 
-# @pytest.fixture
+@pytest.fixture
 def nirvana_data():
     return {
         "name": "Nirvana",
@@ -164,7 +164,7 @@ def nirvana_data():
     }
 
 
-# @pytest.fixture
+@pytest.fixture
 def one_band():
     some_band = Band(
         "Nirvana",
@@ -177,7 +177,7 @@ def one_band():
     return some_band
 
 
-# @pytest.fixture(autouse=True)
+@pytest.fixture(autouse=True)
 def clean():
     """runs before each test automatically
     There's also a more advanced way to run code after each test as well
